@@ -4,30 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pide tu cita - Centro Belleza y Estética MAIKAI</title>
+
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="reservar">
 
 <header>
   <img src="images/estetica-belleza-maikai.png" alt="Logo Centro Belleza" class="logo">
-    <nav>
+
+  <nav>
     <ul class="menu">
       <li><a href="index.html">Inicio</a></li>
-  <li class="dropdown">
-  <a href="#">Servicios ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="servicios/Tratamientos Faciales.html" target="_blank">Tratamientos Faciales</a></li>
-    <li><a href="servicios/Masajes.html" target="_blank">Masajes</a></li>
-    <li><a href="servicios/Eliminacion tatuajes.html" target="_blank">Eliminacion Tatuajes</a></li>
-    <li><a href="servicios/Lifting de Pestanas.html" target="_blank">Lifting de Pestañas</a></li>
-    <li><a href="servicios/Cejas.html" target="_blank">Cejas</a></li>
-    <li><a href="servicios/Micropigmentacion.html" target="_blank">Micropigmentacion</a></li>
-    <li><a href="servicios/Tattoo.html" target="_blank">Tattoo</a></li>
-    <li><a href="servicios/Depilacion.html" target="_blank">Depilacion</a></li>
-  </ul>
-</li>
+
+      <li class="dropdown">
+        <a href="#">Servicios ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="servicios/Tratamientos Faciales.html" target="_blank">Tratamientos Faciales</a></li>
+          <li><a href="servicios/Masajes.html" target="_blank">Masajes</a></li>
+          <li><a href="servicios/Eliminacion tatuajes.html" target="_blank">Eliminación de Tatuajes</a></li>
+          <li><a href="servicios/Lifting de Pestanas.html" target="_blank">Lifting de Pestañas</a></li>
+          <li><a href="servicios/Cejas.html" target="_blank">Cejas</a></li>
+          <li><a href="servicios/Micropigmentacion.html" target="_blank">Micropigmentación</a></li>
+          <li><a href="servicios/Tattoo.html" target="_blank">Tattoo</a></li>
+          <li><a href="servicios/Depilacion.html" target="_blank">Depilación</a></li>
+        </ul>
+      </li>
 
       <li><a href="tecnologia.html">Tecnología</a></li>
       <li><a href="reservar.html">Pedir tu cita</a></li>
@@ -35,40 +42,60 @@
       <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
-  </header>
-  <main>
+</header>
+
+<main>
+  <!-- HERO RESERVA -->
+  <section class="hero-reserva">
     <section class="reserva">
       <h1>Pide tu cita</h1>
-      <p>Accede con tus datos a nuestra agenda online para seleccionar tu tratamiento en la fecha seleccionada.</p>
+      <p>
+        Completa el formulario y accede a nuestra agenda online para reservar tu tratamiento
+        en la fecha que prefieras.
+      </p>
+
       <form class="formulario" action="https://widget.treatwell.es/" method="get" target="_blank">
-  <input type="text" placeholder="Nombre completo" required>
-  <input type="email" placeholder="Correo electrónico" required>
-  <input type="tel" placeholder="Teléfono" required>
-  <select required>
-    <option value="">Selecciona un servicio</option>
-    <option value="faciales">Faciales</option>
-    <option value="masajes">Masajes</option>
-    <option value="manicura">Manicura</option>
-  </select>
-  <input type="date" required>
-  <div class="cliente-status">
-    <label>
-      <input type="radio" name="cliente" value="si" required> Soy cliente
-    </label>
-    <label>
-      <input type="radio" name="cliente" value="no" required> No soy cliente
-    </label>
-  <button type="submit">Reservar</button>
-</form>
 
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono" required>
+
+        <select required>
+          <option value="">Selecciona un servicio</option>
+          <option value="tratamientos-faciales">Tratamientos Faciales</option>
+          <option value="masajes">Masajes</option>
+          <option value="eliminacion-tatuajes">Eliminación de Tatuajes</option>
+          <option value="lifting-pestanas">Lifting de Pestañas</option>
+          <option value="cejas">Cejas</option>
+          <option value="micropigmentacion">Micropigmentación</option>
+          <option value="tattoo">Tattoo</option>
+          <option value="depilacion">Depilación</option>
+        </select>
+
+        <input type="date" required>
+
+        <div class="cliente-status">
+          <label>
+            <input type="radio" name="cliente" value="si" required>
+            Soy cliente
+          </label>
+          <label>
+            <input type="radio" name="cliente" value="no" required>
+            No soy cliente
+          </label>
+        </div>
+
+        <button type="submit">Reservar cita</button>
+      </form>
     </section>
-  </main>
-
-  <!-- Botón volver al inicio al final -->
-  <section class="volver-inicio">
-    <a href="index.html" class="btn">Volver al inicio</a>
   </section>
-  <footer>
+</main>
+
+<section class="volver-inicio">
+  <a href="index.html" class="btn">Volver al inicio</a>
+</section>
+
+<footer>
   <div class="footer-container">
     <div class="footer-section">
       <h3>Contacto</h3>
@@ -79,13 +106,14 @@
     <div class="footer-section">
       <h3>Dirección</h3>
       <p>Barraincua 7, 48009, Bilbao - Bizkaia</p>
-
-     
     </div>
 
     <div class="footer-section">
       <h3>Síguenos</h3>
-      <p><a href="#">Instagram: maikai.bilbao</a> | <a href="#">Facebook: maikai.bilbao</a></p>
+      <p>
+        <a href="#">Instagram: maikai.bilbao</a> |
+        <a href="#">Facebook: maikai.bilbao</a>
+      </p>
     </div>
   </div>
 
